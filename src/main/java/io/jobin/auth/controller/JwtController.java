@@ -30,7 +30,7 @@ public class JwtController {
         this.authenticationManager = authenticationManager;
     }
 
-    @PostMapping(path = "/generate")
+    @PostMapping(path = "/generate/token")
     public ResponseEntity<JwtResponse> createToken(
             @RequestBody LoginRequest loginRequest
     ) {
